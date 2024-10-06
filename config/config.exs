@@ -25,8 +25,8 @@ config :oban_tutorial, ObanTutorialWeb.Endpoint,
 
   config :oban_tutorial, Oban,
   repo: ObanTutorial.Repo,
-  plugins: [Oban.Plugins.Pruner],
-  queues: [default: 10]
+  plugins: [{Oban.Plugins.Pruner, max_age: 300}],
+  queues: [default: 10, events: 30]
 
 # Configures the mailer
 #

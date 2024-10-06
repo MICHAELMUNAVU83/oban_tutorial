@@ -12,6 +12,7 @@ defmodule ObanTutorial.Application do
       ObanTutorialWeb.Telemetry,
       # Start the Ecto repository
       ObanTutorial.Repo,
+      {Oban, Application.fetch_env!(:oban_tutorial, Oban)},
       # Start the PubSub system
       {Phoenix.PubSub, name: ObanTutorial.PubSub},
       # Start Finch
