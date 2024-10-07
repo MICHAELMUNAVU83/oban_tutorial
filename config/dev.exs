@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :oban_tutorial, ObanTutorial.Repo,
-  username: "fundsjet_dev",
-  password: "fundsjet_dev",
+  username: "postgres",
+  password: "postgres",
   hostname: "localhost",
   database: "oban_tutorial_dev",
   stacktrace: true,
